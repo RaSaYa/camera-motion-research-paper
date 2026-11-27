@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="基于大模型的视频理解与相机运动研究。阶段汇报、ACaM 案例分析和 VGGT 参数消融。">
+  <title>基于大模型的视频理解与相机运动研究</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="cover">
+      <div class="cover-copy">
+        <p class="eyebrow">阶段汇报</p>
+        <h1><span>基于大模型的视频理解</span><span>与相机运动研究</span></h1>
+        <p class="summary">从视觉几何与主体、背景光流出发，研究运动线索如何影响大模型对视频运镜的判断。</p>
+        <p class="byline"><strong>徐思雨</strong><time datetime="2026-11-25">2026 年 11 月 25 日</time></p>
+        <a class="primary-action" href="slides/research-update-20261125.pdf">浏览汇报 PDF <span aria-hidden="true">→</span></a>
+      </div>
+      <figure class="cover-art">
+        <img src="slides/cover-art.webp" width="1440" height="1117" alt="六种相机运动的示意图和连续画面，包括下摇、右摇、顺时针滚转、垂直下降、向右平移与向前推进">
+      </figure>
+    </header>
+
+    <section class="experiments" aria-labelledby="experiments-title">
+      <h2 id="experiments-title">交互实验</h2>
+      <div class="experiment-grid">
+        <article class="experiment">
+          <h3>ACaM 代表性案例</h3>
+          <p>对比原始视频与分区光流，查看提示引起的纠错、退化和掩码问题。</p>
+          <a href="experiments/acam/index.html" aria-label="打开 ACaM 代表性案例报告">打开报告 <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="experiment experiment-geometry">
+          <h3>VGGT 参数消融实验</h3>
+          <p>查看 30 条视频在 11 组输入配置下的结果与逐条预测。</p>
+          <a href="experiments/vggt-ablation/index.html" aria-label="打开 VGGT 参数消融实验报告">打开报告 <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
